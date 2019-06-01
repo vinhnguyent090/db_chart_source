@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include db_chart_source *.css
+recursive-include db_chart_source *.csv
+recursive-include db_chart_source *.html
+recursive-include db_chart_source *.ico
+recursive-include db_chart_source *.js
+recursive-include db_chart_source *.json
+recursive-include db_chart_source *.md
+recursive-include db_chart_source *.png
+recursive-include db_chart_source *.py
+recursive-include db_chart_source *.svg
+recursive-include db_chart_source *.txt
+recursive-exclude db_chart_source *.pyc

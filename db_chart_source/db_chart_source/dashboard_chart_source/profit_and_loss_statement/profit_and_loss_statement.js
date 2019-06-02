@@ -1,5 +1,5 @@
-frappe.dashboard_chart_sources["Account Balance Report"] = {
-	"method_path": "db_chart_source.db_chart_source.dashboard_chart_source.account_balance_report.account_balance_report.get",
+frappe.dashboard_chart_sources["Profit and Loss Statement"] = {
+	"method_path": "db_chart_source.db_chart_source.dashboard_chart_source.profit_and_loss_statement.profit_and_loss_statement.get",
 	"filters": [
 		{
 			"fieldname": "company",

@@ -1,5 +1,5 @@
 frappe.dashboard_chart_sources["Account Balance Report"] = {
-	method_path: "erpnext.accounts.dashboard_chart_source.account_balance_report.account_balance_report.get",
+	method_path: "db_chart_source.db_chart_source.dashboard_chart_source.account_balance_report.account_balance_report.get",
 	filters: [
 		{
 			fieldname: "company",
@@ -10,10 +10,10 @@ frappe.dashboard_chart_sources["Account Balance Report"] = {
 			reqd: 1
 		},
 		{
-			fieldname: "report",
-			label: __("Report"),
+			fieldname: "account",
+			label: __("Account"),
 			fieldtype: "Link",
-			options: "Report",
+			options: "Account",
 			reqd: 1
 		},
 		{

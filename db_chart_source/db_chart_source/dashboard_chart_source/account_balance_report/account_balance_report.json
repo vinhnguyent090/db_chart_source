@@ -1,12 +1,12 @@
 {
- "config": "{\n    \"method_path\": \"erpnext.accounts.dashboard_chart_source.account_balance_report.account_balance_report.get\",\n\t\"filters\": [\n\t\t{\n\t\t\t\"fieldname\": \"company\",\n\t\t\t\"label\": \"Company\",\n\t\t\t\"fieldtype\": \"Link\",\n\t\t\t\"options\": \"Company\",\n\t\t\t\"reqd\": 1\n\t\t},\n\t\t{\n\t\t\t\"fieldname\": \"report\",\n\t\t\t\"label\": \"Report\",\n\t\t\t\"fieldtype\": \"Link\",\n\t\t\t\"options\": \"Report\",\n\t\t\t\"reqd\": 1\n\t\t},\n\t\t{\n\t\t\t\"fieldname\": \"timespan\",\n\t\t\t\"label\": \"Period\",\n\t\t\t\"fieldtype\": \"Select\",\n\t\t\t\"options\": [\n\t\t\t\t{\"value\": \"Last Year\", \"label\": \"Last Year\"},\n\t\t\t\t{\"value\": \"Last Quarter\", \"label\": \"Last Quarter\"},\n\t\t\t\t{\"value\": \"Last Month\", \"label\": \"Last Month\"},\n\t\t\t\t{\"value\": \"Last Week\", \"label\": \"Last Week\"}\n\t\t\t],\n\t\t\t\"reqd\": 1\n\t\t},\n\t\t{\n\t\t\t\"fieldname\": \"timegrain\",\n\t\t\t\"label\": \"Periodicity\",\n\t\t\t\"fieldtype\": \"Select\",\n\t\t\t\"options\": [\n\t\t\t\t{\"value\": \"Quarterly\", \"label\": \"Quarterly\"},\n\t\t\t\t{\"value\": \"Monthly\", \"label\": \"Monthly\"},\n\t\t\t\t{\"value\": \"Weekly\", \"label\": \"Weekly\"},\n\t\t\t\t{\"value\": \"Daily\", \"label\": \"Daily\"}\n\t\t\t],\n\t\t\t\"reqd\": 1\n\t\t}\n\t],\n\t\"is_time_series\": true\n}\n", 
+ "config": "{\n    \"method_path\": \"db_chart_source.db_chart_source.dashboard_chart_source.account_balance_report.account_balance_report.get\",\n\t\"filters\": [\n\t\t{\n\t\t\t\"fieldname\": \"company\",\n\t\t\t\"label\": \"Company\",\n\t\t\t\"fieldtype\": \"Link\",\n\t\t\t\"options\": \"Company\",\n\t\t\t\"reqd\": 1\n\t\t},\n\t\t{\n\t\t\t\"fieldname\": \"account\",\n\t\t\t\"label\": \"Account\",\n\t\t\t\"fieldtype\": \"Link\",\n\t\t\t\"options\": \"Account\",\n\t\t\t\"reqd\": 1\n\t\t},\n\t\t{\n\t\t\t\"fieldname\": \"timespan\",\n\t\t\t\"label\": \"Period\",\n\t\t\t\"fieldtype\": \"Select\",\n\t\t\t\"options\": [\n\t\t\t\t{\"value\": \"Last Year\", \"label\": \"Last Year\"},\n\t\t\t\t{\"value\": \"Last Quarter\", \"label\": \"Last Quarter\"},\n\t\t\t\t{\"value\": \"Last Month\", \"label\": \"Last Month\"},\n\t\t\t\t{\"value\": \"Last Week\", \"label\": \"Last Week\"}\n\t\t\t],\n\t\t\t\"reqd\": 1\n\t\t},\n\t\t{\n\t\t\t\"fieldname\": \"timegrain\",\n\t\t\t\"label\": \"Periodicity\",\n\t\t\t\"fieldtype\": \"Select\",\n\t\t\t\"options\": [\n\t\t\t\t{\"value\": \"Quarterly\", \"label\": \"Quarterly\"},\n\t\t\t\t{\"value\": \"Monthly\", \"label\": \"Monthly\"},\n\t\t\t\t{\"value\": \"Weekly\", \"label\": \"Weekly\"},\n\t\t\t\t{\"value\": \"Daily\", \"label\": \"Daily\"}\n\t\t\t],\n\t\t\t\"reqd\": 1\n\t\t}\n\t],\n\t\"is_time_series\": true\n}\n", 
  "creation": "2019-04-22 19:45:18.156642", 
  "docstatus": 0, 
  "doctype": "Dashboard Chart Source", 
  "idx": 1, 
- "modified": "2019-04-23 05:38:19.414021", 
+ "modified": "2019-06-02 00:30:11.382804", 
  "modified_by": "Administrator", 
- "module": "Accounts", 
+ "module": "Db Chart Source", 
  "name": "Account Balance Report", 
  "owner": "Administrator", 
  "source_name": "Account Balance Report"

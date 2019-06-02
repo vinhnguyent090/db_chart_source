@@ -13,15 +13,13 @@ from erpnext.accounts.report.profit_and_loss_statement.profit_and_loss_statement
 @frappe.whitelist()
 @cache_source
 def get(filters=None):
-	company = filters.get("company")
 
-	to_date = nowdate()
 	filters = frappe._dict({
-		"from_fiscal_year" : 2019,
-		"to_fiscal_year" : 2019,
-		"periodicity": "Monthly",
+		"from_fiscal_year" : filters.get("from_fiscal_year"),
+		"to_fiscal_year" : filters.get("to_fiscal_year"),
+		"periodicity": filters.get("periodicity"),
 		"accumulated_values": 1,
-		"company": company
+		"company": filters.get("company")
 	})
 
 	period_list = get_period_list(filters.from_fiscal_year, filters.to_fiscal_year,

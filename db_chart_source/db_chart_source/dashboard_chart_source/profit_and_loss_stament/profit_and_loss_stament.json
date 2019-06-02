@@ -1,0 +1,13 @@
+{
+ "config": "{\n\t\"method_path\": \"db_chart_source.db_chart_source.dashboard_chart_source.profit_and_loss_statement.profit_and_loss_statement.get\",\n\t\"filters\": [\n\t\t{\n\t\t\t\"fieldname\": \"company\",\n\t\t\t\"label\": \"Company\",\n\t\t\t\"fieldtype\": \"Link\",\n\t\t\t\"options\": \"Company\",\n\t\t\t\"reqd\": 1\n\t\t}\n\t\t,{\n\t\t\t\"fieldname\":\"from_fiscal_year\",\n\t\t\t\"label\": \"Start Year\",\n\t\t\t\"fieldtype\": \"Link\",\n\t\t\t\"options\": \"Fiscal Year\",\n\t\t\t\"reqd\": 1\n\t\t},\n\t\t{\n\t\t\t\"fieldname\":\"to_fiscal_year\",\n\t\t\t\"label\": \"End Year\",\n\t\t\t\"fieldtype\": \"Link\",\n\t\t\t\"options\": \"Fiscal Year\",\n\t\t\t\"reqd\": 1\n\t\t},\n\t\t{\n\t\t\t\"fieldname\": \"periodicity\",\n\t\t\t\"label\": \"Periodicity\",\n\t\t\t\"fieldtype\": \"Select\",\n\t\t\t\"options\": [\n\t\t\t\t{ \"value\": \"Monthly\", \"label\": \"Monthly\" },\n\t\t\t\t{ \"value\": \"Quarterly\", \"label\": \"Quarterly\" },\n\t\t\t\t{ \"value\": \"Half-Yearly\", \"label\": \"Half-Yearly\" },\n\t\t\t\t{ \"value\": \"Yearly\", \"label\": \"Yearly\" }\n\t\t\t],\n\t\t\t\"default\": \"Monthly\",\n\t\t\t\"reqd\": 1\n\t\t}\n\t],\n\t\"is_time_series\": true\n}", 
+ "creation": "2019-06-02 01:53:40.791628", 
+ "docstatus": 0, 
+ "doctype": "Dashboard Chart Source", 
+ "idx": 0, 
+ "modified": "2019-06-02 01:53:40.791628", 
+ "modified_by": "Administrator", 
+ "module": "Db Chart Source", 
+ "name": "Profit and Loss Stament", 
+ "owner": "Administrator", 
+ "source_name": "Profit and Loss Stament"
+}

@@ -37,19 +37,11 @@ def get(filters=None):
 
 	net_profit_loss = get_net_profit_loss(income, expense, period_list, filters.company, filters.presentation_currency)
 
-	data = []
-	data.extend(income or [])
-	data.extend(expense or [])
-	if net_profit_loss:
-		data.append(net_profit_loss)
-
 	columns = get_columns(filters.periodicity, period_list, filters.accumulated_values, filters.company)
 
 	chart = get_chart_data(filters, columns, income, expense, net_profit_loss)
 
-	return columns, data, None, chart
-
-
+	return chart
 
 def get_chart_data(filters, columns, income, expense, net_profit_loss):
 	labels = [d.get("label") for d in columns[2:]]
@@ -73,15 +65,8 @@ def get_chart_data(filters, columns, income, expense, net_profit_loss):
 		datasets.append({'name': 'Net Profit/Loss', 'values': net_profit})
 
 	chart = {
-		"data": {
-			'labels': labels,
-			'datasets': datasets
-		}
+		'labels': labels,
+		'datasets': datasets
 	}
-
-	if not filters.accumulated_values:
-		chart["type"] = "bar"
-	else:
-		chart["type"] = "line"
 
 	return chart
